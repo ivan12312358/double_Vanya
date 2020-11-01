@@ -1,0 +1,148 @@
+\hypertarget{equation_8cpp}{}\doxysection{equation.\+cpp File Reference}
+\label{equation_8cpp}\index{equation.cpp@{equation.cpp}}
+{\ttfamily \#include \char`\"{}equation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unittest.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for equation.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{equation_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Description\+: prints creator of the program and calls functions of scanning coefficients and decision equation Arguments\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{equation_8cpp_a0f1d8690a8df0c07caa321612518dd48}{input\+\_\+values}} (double $\ast$a, int coeff)
+\begin{DoxyCompactList}\small\item\em Description\+: function scans coefficients. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{equation_8cpp_ae35be8e74fd137a4592337cdad7d74ff}{decision}} (double a, double b, double c, double $\ast$x\+\_\+1, double $\ast$x\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Description\+: function of decision equation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{equation_8cpp_a34763e92854f3f55ce9e49135620acca}{line\+\_\+equation}} (double b, double c, double $\ast$x\+\_\+1, double $\ast$x\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Description\+: function solves linear equation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{equation_8cpp_a28e037d6f5911202f3641ade294e3859}{print\+\_\+roots}} (int res\+\_\+cnt, double x\+\_\+1, double x\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Description\+: function prints roots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{equation_8cpp_ae35be8e74fd137a4592337cdad7d74ff}\label{equation_8cpp_ae35be8e74fd137a4592337cdad7d74ff}} 
+\index{equation.cpp@{equation.cpp}!decision@{decision}}
+\index{decision@{decision}!equation.cpp@{equation.cpp}}
+\doxysubsubsection{\texorpdfstring{decision()}{decision()}}
+{\footnotesize\ttfamily int decision (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x\+\_\+1,  }\item[{double $\ast$}]{x\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Description\+: function of decision equation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Arguments} & \\
+\hline
+ & {\em E\+PS} & -\/ value close to zero\\
+\hline
+ & {\em a,b,c} & -\/ values of coefficients\\
+\hline
+ & {\em x\+\_\+1,x\+\_\+2} & -\/ addresses of roots\\
+\hline
+\mbox{\texttt{ out}}  & {\em Return\+\_\+values} & \\
+\hline
+ & {\em x\+\_\+1,x\+\_\+2} & -\/ values of roots \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8cpp_a0f1d8690a8df0c07caa321612518dd48}\label{equation_8cpp_a0f1d8690a8df0c07caa321612518dd48}} 
+\index{equation.cpp@{equation.cpp}!input\_values@{input\_values}}
+\index{input\_values@{input\_values}!equation.cpp@{equation.cpp}}
+\doxysubsubsection{\texorpdfstring{input\_values()}{input\_values()}}
+{\footnotesize\ttfamily void input\+\_\+values (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{int}]{coeff }\end{DoxyParamCaption})}
+
+
+
+Description\+: function scans coefficients. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Arguments} & \\
+\hline
+ & {\em number\+\_\+or\+\_\+char} & -\/ checks the input data type\\
+\hline
+ & {\em a,b,c} & -\/ addresses of coefficients or equation\\
+\hline
+\mbox{\texttt{ out}}  & {\em Return\+\_\+values} & \\
+\hline
+ & {\em a,b,c} & -\/ coefficients of equation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8cpp_a34763e92854f3f55ce9e49135620acca}\label{equation_8cpp_a34763e92854f3f55ce9e49135620acca}} 
+\index{equation.cpp@{equation.cpp}!line\_equation@{line\_equation}}
+\index{line\_equation@{line\_equation}!equation.cpp@{equation.cpp}}
+\doxysubsubsection{\texorpdfstring{line\_equation()}{line\_equation()}}
+{\footnotesize\ttfamily int line\+\_\+equation (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x\+\_\+1,  }\item[{double $\ast$}]{x\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Description\+: function solves linear equation. 
+
+
+
+Definition at line 131 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{equation_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{equation.cpp@{equation.cpp}!main@{main}}
+\index{main@{main}!equation.cpp@{equation.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Description\+: prints creator of the program and calls functions of scanning coefficients and decision equation Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ first coefficient,\\
+\hline
+{\em b} & -\/ second coefficient,\\
+\hline
+{\em c} & -\/ third coefficient\\
+\hline
+{\em x\+\_\+1} & -\/ first root, x\+\_\+2 -\/ second root \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8cpp_a28e037d6f5911202f3641ade294e3859}\label{equation_8cpp_a28e037d6f5911202f3641ade294e3859}} 
+\index{equation.cpp@{equation.cpp}!print\_roots@{print\_roots}}
+\index{print\_roots@{print\_roots}!equation.cpp@{equation.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_roots()}{print\_roots()}}
+{\footnotesize\ttfamily void print\+\_\+roots (\begin{DoxyParamCaption}\item[{int}]{res\+\_\+cnt,  }\item[{double}]{x\+\_\+1,  }\item[{double}]{x\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Description\+: function prints roots. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Arguments} & \\
+\hline
+ & {\em x\+\_\+1,x\+\_\+2} & -\/ values of roots\\
+\hline
+ & {\em marker} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em Return\+\_\+values} & \\
+\hline
+ & {\em x\+\_\+1} & -\/ Root\+\_\+1\\
+\hline
+ & {\em x\+\_\+2} & -\/ Root\+\_\+2 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file equation.\+cpp.
+

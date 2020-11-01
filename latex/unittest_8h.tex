@@ -1,0 +1,56 @@
+\hypertarget{unittest_8h}{}\doxysection{unittest.\+h File Reference}
+\label{unittest_8h}\index{unittest.h@{unittest.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for unittest.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{unittest_8h_ac322c3e91ef11f35d811795daae4b372}{T\+E\+ST}}(num,  a,  b,  c,  X1\+\_\+,  X2\+\_\+,  x1\+\_\+,  x2\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unittest_8h_af950c85b92b6ad7b7ddc7f69cce19af3}{unittest}} ()
+\begin{DoxyCompactList}\small\item\em Description\+: function tests decision of equation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{unittest_8h_ac322c3e91ef11f35d811795daae4b372}\label{unittest_8h_ac322c3e91ef11f35d811795daae4b372}} 
+\index{unittest.h@{unittest.h}!TEST@{TEST}}
+\index{TEST@{TEST}!unittest.h@{unittest.h}}
+\doxysubsubsection{\texorpdfstring{TEST}{TEST}}
+{\footnotesize\ttfamily \#define T\+E\+ST(\begin{DoxyParamCaption}\item[{}]{num,  }\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{X1\+\_\+,  }\item[{}]{X2\+\_\+,  }\item[{}]{x1\+\_\+,  }\item[{}]{x2\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{     \mbox{\hyperlink{equation_8cpp_ae35be8e74fd137a4592337cdad7d74ff}{decision}}(a, b, c, \&x1\_, \&x2\_);               \(\backslash\)}
+\DoxyCodeLine{     if ((X1\_ == x1\_) \&\& (X2\_ == x2\_))            \(\backslash\)}
+\DoxyCodeLine{         printf(\textcolor{stringliteral}{"{}TEST "{}}\#num\textcolor{stringliteral}{"{} is ok\(\backslash\)n"{}});           \(\backslash\)}
+\DoxyCodeLine{     else                                         \(\backslash\)}
+\DoxyCodeLine{         printf(\textcolor{stringliteral}{"{}TEST  is BAD: expected "{}}\#X1\_\textcolor{stringliteral}{"{} "{}}\#X2\_\textcolor{stringliteral}{"{} got \%lg \%lg\(\backslash\)n"{}}, x1\_, x2\_);}
+
+\end{DoxyCode}
+
+
+Definition at line 3 of file unittest.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{unittest_8h_af950c85b92b6ad7b7ddc7f69cce19af3}\label{unittest_8h_af950c85b92b6ad7b7ddc7f69cce19af3}} 
+\index{unittest.h@{unittest.h}!unittest@{unittest}}
+\index{unittest@{unittest}!unittest.h@{unittest.h}}
+\doxysubsubsection{\texorpdfstring{unittest()}{unittest()}}
+{\footnotesize\ttfamily void unittest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Description\+: function tests decision of equation. 
+
+
+
+Definition at line 11 of file unittest.\+h.
+

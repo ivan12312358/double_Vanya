@@ -1,0 +1,187 @@
+\hypertarget{equation_8h}{}\doxysection{equation.\+h File Reference}
+\label{equation_8h}\index{equation.h@{equation.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{equation_8h_a0f1d8690a8df0c07caa321612518dd48}{input\+\_\+values}} (double $\ast$a, int coeff)
+\begin{DoxyCompactList}\small\item\em Description\+: function scans coefficients. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{equation_8h_ae35be8e74fd137a4592337cdad7d74ff}{decision}} (double a, double b, double c, double $\ast$x\+\_\+1, double $\ast$x\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Description\+: function of decision equation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{equation_8h_a34763e92854f3f55ce9e49135620acca}{line\+\_\+equation}} (double b, double c, double $\ast$x\+\_\+1, double $\ast$x\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Description\+: function solves linear equation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{equation_8h_af950c85b92b6ad7b7ddc7f69cce19af3}{unittest}} ()
+\begin{DoxyCompactList}\small\item\em Description\+: function tests decision of equation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{equation_8h_a28e037d6f5911202f3641ade294e3859}{print\+\_\+roots}} (int res\+\_\+cnt, double x\+\_\+1, double x\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Description\+: function prints roots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{equation_8h_afe01386a82fedc016455a43c20280a97}{E\+PS}} = 1e-\/8
+\begin{DoxyCompactList}\small\item\em E\+PS === 0. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{equation_8h_afa42db329b9438c277f6e7526686566f}{N\+U\+L\+L\+\_\+}} = -\/1
+\begin{DoxyCompactList}\small\item\em N\+U\+L\+L\+\_\+ means \char`\"{}\+No roots\char`\"{}. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{equation_8h_a14c9dbab105f1b8b8182a022d73e610c}{I\+NF}} = 8
+\begin{DoxyCompactList}\small\item\em I\+NF means \char`\"{}\+Infinity roots\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{equation_8h_ae35be8e74fd137a4592337cdad7d74ff}\label{equation_8h_ae35be8e74fd137a4592337cdad7d74ff}} 
+\index{equation.h@{equation.h}!decision@{decision}}
+\index{decision@{decision}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{decision()}{decision()}}
+{\footnotesize\ttfamily int decision (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x\+\_\+1,  }\item[{double $\ast$}]{x\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Description\+: function of decision equation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Arguments} & \\
+\hline
+ & {\em E\+PS} & -\/ value close to zero\\
+\hline
+ & {\em a,b,c} & -\/ values of coefficients\\
+\hline
+ & {\em x\+\_\+1,x\+\_\+2} & -\/ addresses of roots\\
+\hline
+\mbox{\texttt{ out}}  & {\em Return\+\_\+values} & \\
+\hline
+ & {\em x\+\_\+1,x\+\_\+2} & -\/ values of roots \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8h_a0f1d8690a8df0c07caa321612518dd48}\label{equation_8h_a0f1d8690a8df0c07caa321612518dd48}} 
+\index{equation.h@{equation.h}!input\_values@{input\_values}}
+\index{input\_values@{input\_values}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{input\_values()}{input\_values()}}
+{\footnotesize\ttfamily void input\+\_\+values (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{int}]{coeff }\end{DoxyParamCaption})}
+
+
+
+Description\+: function scans coefficients. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Arguments} & \\
+\hline
+ & {\em number\+\_\+or\+\_\+char} & -\/ checks the input data type\\
+\hline
+ & {\em a,b,c} & -\/ addresses of coefficients or equation\\
+\hline
+\mbox{\texttt{ out}}  & {\em Return\+\_\+values} & \\
+\hline
+ & {\em a,b,c} & -\/ coefficients of equation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8h_a34763e92854f3f55ce9e49135620acca}\label{equation_8h_a34763e92854f3f55ce9e49135620acca}} 
+\index{equation.h@{equation.h}!line\_equation@{line\_equation}}
+\index{line\_equation@{line\_equation}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{line\_equation()}{line\_equation()}}
+{\footnotesize\ttfamily int line\+\_\+equation (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x\+\_\+1,  }\item[{double $\ast$}]{x\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Description\+: function solves linear equation. 
+
+
+
+Definition at line 131 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8h_a28e037d6f5911202f3641ade294e3859}\label{equation_8h_a28e037d6f5911202f3641ade294e3859}} 
+\index{equation.h@{equation.h}!print\_roots@{print\_roots}}
+\index{print\_roots@{print\_roots}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{print\_roots()}{print\_roots()}}
+{\footnotesize\ttfamily void print\+\_\+roots (\begin{DoxyParamCaption}\item[{int}]{res\+\_\+cnt,  }\item[{double}]{x\+\_\+1,  }\item[{double}]{x\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Description\+: function prints roots. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Arguments} & \\
+\hline
+ & {\em x\+\_\+1,x\+\_\+2} & -\/ values of roots\\
+\hline
+ & {\em marker} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em Return\+\_\+values} & \\
+\hline
+ & {\em x\+\_\+1} & -\/ Root\+\_\+1\\
+\hline
+ & {\em x\+\_\+2} & -\/ Root\+\_\+2 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file equation.\+cpp.
+
+\mbox{\Hypertarget{equation_8h_af950c85b92b6ad7b7ddc7f69cce19af3}\label{equation_8h_af950c85b92b6ad7b7ddc7f69cce19af3}} 
+\index{equation.h@{equation.h}!unittest@{unittest}}
+\index{unittest@{unittest}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{unittest()}{unittest()}}
+{\footnotesize\ttfamily void unittest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Description\+: function tests decision of equation. 
+
+
+
+Definition at line 11 of file unittest.\+h.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{equation_8h_afe01386a82fedc016455a43c20280a97}\label{equation_8h_afe01386a82fedc016455a43c20280a97}} 
+\index{equation.h@{equation.h}!EPS@{EPS}}
+\index{EPS@{EPS}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{EPS}{EPS}}
+{\footnotesize\ttfamily const double E\+PS = 1e-\/8}
+
+
+
+E\+PS === 0. 
+
+
+
+Definition at line 2 of file equation.\+h.
+
+\mbox{\Hypertarget{equation_8h_a14c9dbab105f1b8b8182a022d73e610c}\label{equation_8h_a14c9dbab105f1b8b8182a022d73e610c}} 
+\index{equation.h@{equation.h}!INF@{INF}}
+\index{INF@{INF}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{INF}{INF}}
+{\footnotesize\ttfamily const int I\+NF = 8}
+
+
+
+I\+NF means \char`\"{}\+Infinity roots\char`\"{}. 
+
+
+
+Definition at line 6 of file equation.\+h.
+
+\mbox{\Hypertarget{equation_8h_afa42db329b9438c277f6e7526686566f}\label{equation_8h_afa42db329b9438c277f6e7526686566f}} 
+\index{equation.h@{equation.h}!NULL\_@{NULL\_}}
+\index{NULL\_@{NULL\_}!equation.h@{equation.h}}
+\doxysubsubsection{\texorpdfstring{NULL\_}{NULL\_}}
+{\footnotesize\ttfamily const int N\+U\+L\+L\+\_\+ = -\/1}
+
+
+
+N\+U\+L\+L\+\_\+ means \char`\"{}\+No roots\char`\"{}. 
+
+
+
+Definition at line 4 of file equation.\+h.
+
